@@ -1,0 +1,53 @@
+
+version: "0.1"
+
+matrix:
+  os: [win, linux]
+
+runson: ${matrix.os}
+
+runtime:
+  - language: node
+    version: "20"
+
+env:
+  TEST_MESSAGE: "Welcome to TestMu AI"
+  LT_USERNAME: ${{.secrets.LT_USERNAME}}
+  LT_ACCESS_KEY: ${{.secrets.LT_ACCESS_KEY}}
+
+pre:
+  - node --version
+  - npm --version
+  - npm ci --cache .npm
+  - npx playwright --version
+  - npx playwright install chromium firefox
+
+
+testSuites:
+  - npm test
+
+cacheKey: '{{ checksum "package-lock.json" }}'
+cacheDirectories:
+  - .npm
+
+report: true
+partialReports:
+  frameworkName: playwright
+  location: playwright-report
+  type: html
+
+mergeArtifacts: true
+
+uploadArtefacts:
+  - name: playwright-results
+    path:
+      - playwright-report/**
+      - test-results/**
+
+post:
+  - node --version
+
+jobLabel:
+  - playwright
+  - testmu-playground
+  - cross-platform

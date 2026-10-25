@@ -1,0 +1,19 @@
+{
+  "name": "testmu-playwright-assignment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@lambdatest/playwright-node-sdk": "^1.0.5",
+    "@playwright/test": "^1.62.0"
+  }
+}

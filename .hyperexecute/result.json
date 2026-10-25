@@ -1,0 +1,145 @@
+{
+    "id": "7c09d00a-314f-44b2-9ac2-1ea4e705a148",
+    "created_at": "2026-10-25T14:33:24Z",
+    "update_at": "2026-10-25T14:35:16Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2026-10-25T14:33:56Z",
+    "end_time": "2026-10-25T14:35:16Z",
+    "summary": {
+        "total_time": 80000000000,
+        "execution_time": 80000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 154000000000,
+        "jobTestExecutionTime": "39s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "postrun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            }
+        },
+        "status": "skipped",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=7c09d00a-314f-44b2-9ac2-1ea4e705a148"
+    },
+    "tasks": [
+        {
+            "id": "HYPW-3381907-1792938834834045483LJZ",
+            "os": "win",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-10-25T14:33:54Z",
+            "update_at": "2026-10-25T14:35:11Z",
+            "start_time": "2026-10-25T14:33:56Z",
+            "end_time": "2026-10-25T14:35:11Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "c7c0001b-9399-493b-a8f4-3ca4bf4a9bc2",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-10-25T14:34:04Z",
+                    "started_at": "2026-10-25T14:34:03Z",
+                    "updated_at": "2026-10-25T14:34:29Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "2711b1ee-8a21-4754-9150-055b9025cf1f",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "npm test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-10-25T14:34:30Z",
+                    "started_at": "2026-10-25T14:34:38Z",
+                    "updated_at": "2026-10-25T14:35:05Z",
+                    "order": 4,
+                    "task_number": 1
+                },
+                {
+                    "id": "39642eac-c951-4923-bebb-cc3421a9038d",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-10-25T14:34:30Z",
+                    "started_at": "2026-10-25T14:35:11Z",
+                    "updated_at": "2026-10-25T14:35:11Z",
+                    "order": 5,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPL-3381907-1792938834839347084NHL",
+            "os": "linux",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-10-25T14:33:54Z",
+            "update_at": "2026-10-25T14:35:16Z",
+            "start_time": "2026-10-25T14:33:57Z",
+            "end_time": "2026-10-25T14:35:16Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "2a08a259-4900-4dc7-9e12-8de90b5d3313",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-10-25T14:34:04Z",
+                    "started_at": "2026-10-25T14:34:03Z",
+                    "updated_at": "2026-10-25T14:34:23Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "84c80eff-2bed-4663-9935-d53ac613a59c",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "npm test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-10-25T14:34:23Z",
+                    "started_at": "2026-10-25T14:34:31Z",
+                    "updated_at": "2026-10-25T14:35:10Z",
+                    "order": 4,
+                    "task_number": 2
+                },
+                {
+                    "id": "abf51faf-f046-47fb-a1a5-4f566efd09ee",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-10-25T14:34:23Z",
+                    "started_at": "2026-10-25T14:35:15Z",
+                    "updated_at": "2026-10-25T14:35:15Z",
+                    "order": 5,
+                    "task_number": 2
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}

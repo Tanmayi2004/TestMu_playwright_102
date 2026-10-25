@@ -1,0 +1,207 @@
+accessibilityJob: false
+alwaysRunPostSteps: false
+appium: null
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+cacheDirectories:
+    - .npm
+cacheKey: '{{ checksum "package-lock.json" }}'
+captureScreenRecordingForScenarios: false
+codeDirectory: testmu-playwright-assignment2
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+env:
+    LT_ACCESS_KEY: ${{.secrets.LT_ACCESS_KEY}}
+    LT_USERNAME: ${{.secrets.LT_USERNAME}}
+    TEST_MESSAGE: Welcome to TestMu AI
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        artifacts: false
+        autoGrantPermissions: false
+        avoidAppLaunch: false
+        customData: {}
+        darkMode: false
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        enableBluetooth: false
+        enableResultBundle: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: null
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        localhost: false
+        minorOsVersion: false
+        mitmProxy: false
+        mobileDC: null
+        networkHar: false
+        networkLogsOptions:
+            captureContent: false
+            excludeHosts: []
+            includeHosts: []
+        otherApps: []
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        smartUI: null
+        testRemarks: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalPost:
+    commands: []
+    completed: false
+    disableEmail: false
+    downloadArtifacts: false
+    email:
+        linkValidity: 0
+        metaInfo: []
+        templatePath: ""
+        to: []
+    mode: ""
+    runson: ""
+    shell: ""
+    workingDirectory: ""
+globalPre:
+    commands: []
+    completed: false
+    location: ""
+    maxRetries: 0
+    mode: ""
+    runson: ""
+    shell: ""
+    type: ""
+    workingDirectory: ""
+    yamlPath: null
+jobID: 7c09d00a-314f-44b2-9ac2-1ea4e705a148
+jobLabel:
+    - playwright
+    - testmu-playground
+    - cross-platform
+key: '********'
+localHTTPProxy: ""
+ltOptions: {}
+matrix:
+    os:
+        - win
+        - linux
+maxRetriesPreSteps: 0
+mergeArtifacts: true
+meta: {}
+onpremEnv: ""
+partialReports:
+    type: html
+    location: playwright-report
+    frameworkName: playwright
+    email:
+        to: []
+        metaInfo: []
+        linkValidity: 0
+    configPath: ""
+    configPathURL: ""
+platformConfig: null
+post:
+    - node --version
+postDirectives:
+    commands:
+        - node --version
+    shell: ""
+    workingDirectory: ""
+pre:
+    - node --version
+    - npm --version
+    - npm ci --cache .npm
+    - npx playwright --version
+    - npx playwright install chromium firefox
+preDirectives:
+    commands:
+        - node --version
+        - npm --version
+        - npm ci --cache .npm
+        - npx playwright --version
+        - npx playwright install chromium firefox
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: 01M5ARF1813XF5A8PJ04ZKWEWP
+    name: LambdaTest Default Project
+    type: custom
+projectpath: ""
+regionConfig:
+    storage:
+        enabled: false
+        name: ""
+        platform: azure
+        region: ""
+    vm: []
+report: true
+runson: ${matrix.os}
+runtime:
+    addons: []
+    language: node
+    opts: {}
+    version: "20"
+slackChannel: ""
+sourcePayload:
+    verifySSL: true
+sprofilePath: ""
+storageType: ""
+testDiscoveryResultV3: []
+testSuites:
+    - npm test
+testType: playwright
+triggerMode: false
+triggerSource: CLI
+tunnelOpts:
+    testsPerTunnel: 10
+unzipPayload: false
+uploadArtefacts:
+    - email:
+        linkValidity: 0
+        metaInfo: []
+        to: []
+      name: playwright-results
+      path:
+        - playwright-report/**
+        - test-results/**
+user: mtanmayi
+version: "0.1"
+waitForArtefactsUpload: false
+whiteLabelProductTag: ""

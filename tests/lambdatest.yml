@@ -1,0 +1,28 @@
+user: ${LT_USERNAME}
+accesskey: ${LT_ACCESS_KEY}
+
+build: "TestMu AI Playwright Assignment"
+name: "Playground Tests"
+framework: "playwright"
+
+parallelsPerplatform: 1
+network: "true"
+console: "true"
+video: "true"
+visual: "true"
+headless: "true"
+
+playwrightConfigOptions:
+  testDir: "./tests"
+  use:
+    baseURL: "https://www.testmuai.com/selenium-playground/"
+    video: "off"
+
+platforms:
+  - platform: "Windows 11"
+    browserName: "chrome"
+    browserVersion: "latest"
+
+  - platform: "Linux"
+    browserName: "chrome"
+    browserVersion: "latest"
